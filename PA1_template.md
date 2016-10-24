@@ -40,6 +40,7 @@ Use 15 bins (breaks) to display adequately:
 hist(act2$steps,breaks=15, main="Histogram of mean steps/day", xlab="Mean steps/day")
 ```
 Histogram1-1.png
+![ScreenShot](https://github.com/Pinecode99/RepData_PeerAssessment1/blob/master/Figs/Histogram1-1.png)
 
 Part 3 answer
 Mean and median of the total number of steps per day
