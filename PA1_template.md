@@ -34,6 +34,7 @@ act2
 ```
 
 
+
 Part 2 Answer
 Use 15 bins (breaks) to display adequately:
 ```{r Histogram1, echo=TRUE}
@@ -55,7 +56,8 @@ act5 <- cbind(act3, act4)
 act5
 # rm(act2,act3,act4)
 ```
-
+Mean steps per day: 10766.19
+Meadian steps per day: 10765
 
 #What is the average daily activity pattern?
 Make a time series plot (i.e. type = "l" ) of the 5-minute interval (x-axis) and the average  
@@ -73,7 +75,8 @@ MaxInt1 <- which.max(act10$steps)
 MaxInt2 <- act10[MaxInt1,]
 MaxInt2
 ```
-
+Max interval: 835
+Max interval steps: 206.1698
 
 #Imputing missing values
 Calculate and report the total number of missing values in the dataset  
@@ -130,6 +133,8 @@ act33 <- as.data.frame(median(act31$steps))
 names(act33) <- "median"
 act34 <- cbind(act32, act33)
 ```
+New mean: 10766.19
+New median: 10766.19
 
 this is the result (coincidentally! (or not) the mean and median are forced to be  
 the same using the method choosen) this can be demonstrated by sorting the act31 column by steps  
