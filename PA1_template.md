@@ -41,6 +41,8 @@ hist(act2$steps,breaks=15, main="Histogram of mean steps/day", xlab="Mean steps/
 ```
 Histogram1-1.png
 ![ScreenShot](https://github.com/Pinecode99/RepData_PeerAssessment1/blob/master/Figs/Histogram1-1.png)
+(PLEASE - go to my Githum Figs/ folder to see this last plot. I don't know why it will not  
+automatically appear here like the others. Will figure this out later!
 
 Part 3 answer
 Mean and median of the total number of steps per day
