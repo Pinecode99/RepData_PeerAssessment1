@@ -192,7 +192,6 @@ plot(steps~interval,data=act56, type="l", xlab="Interval", main="Average number 
 
 weekinfo-1.png
 ![ScreenShot](https://github.com/Pinecode99/RepData_PeerAssessment1/blob/master/Figs/weekinfo-1.png)
-
 ###dev.off()
 
 #rm(act40,act42,act50,act51,act55,act56)
