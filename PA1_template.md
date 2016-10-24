@@ -62,6 +62,7 @@ act10 <- aggregate(steps~interval,act1,mean)
 plot(steps~interval,data=act10, type="l", xlab="Interval", main="Average number of steps taken by interval (Oct-Nov 2012)")
 ```
 patternline-1.png
+![ScreenShot](https://github.com/Pinecode99/RepData_PeerAssessment1/blob/master/Figs/patternline-1.png)
 
 Which 5-minute interval, on average across all the days in the dataset,    
 contains the maximum number of steps?  
@@ -117,6 +118,7 @@ act31 <- aggregate(steps~date,act30,sum)
 hist(act31$steps,breaks=15, main="Histogram of mean steps/day", xlab="Mean steps/day")
 ```
 histogram2-1.png
+![ScreenShot](https://github.com/Pinecode99/RepData_PeerAssessment1/blob/master/Figs/histogram2-1.png)
 
 create a file for mean and one for median and combine them
 ```{r, echo=TRUE}
@@ -189,6 +191,7 @@ act56 <- aggregate(steps~interval,act55,mean)
 plot(steps~interval,data=act56, type="l", xlab="Interval", main="Average number of steps (weekend)")
 
 weekinfo-1.png
+![ScreenShot](https://github.com/Pinecode99/RepData_PeerAssessment1/blob/master/Figs/weekinfo-1.png)
 
 ###dev.off()
 
