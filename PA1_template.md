@@ -192,13 +192,11 @@ act55 <- filter(act42,code=="weekend")
 act56 <- aggregate(steps~interval,act55,mean)
 plot(steps~interval,data=act56, type="l", xlab="Interval", main="Average number of steps (weekend)")
 
-weekinfo-1.png
-![ScreenShot](https://github.com/Pinecode99/RepData_PeerAssessment1/blob/master/Figs/weekinfo-1.png)
-
 ###dev.off()
 
 #rm(act40,act42,act50,act51,act55,act56)
 
 ```
-
+weekinfo-1.png
+![ScreenShot](https://github.com/Pinecode99/RepData_PeerAssessment1/blob/master/Figs/weekinfo-1.png)
 
