@@ -84,6 +84,7 @@ Calculate and report the total number of missing values in the dataset
 ```{r, echo=TRUE}
 sum(is.na(act1[,1]))
 ```
+Sum of missing values: 2304  
 
 Devise a strategy for filling in all of the missing values in the dataset.  
 My strategy will be to use the mean of the relevant segments.    
