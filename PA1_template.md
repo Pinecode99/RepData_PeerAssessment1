@@ -39,7 +39,7 @@ Use 15 bins (breaks) to display adequately:
 ```{r Histogram1, echo=TRUE}
 hist(act2$steps,breaks=15, main="Histogram of mean steps/day", xlab="Mean steps/day")
 ```
-
+Histogram1-1.png
 
 Part 3 answer
 Mean and median of the total number of steps per day
@@ -60,7 +60,7 @@ Make a time series plot (i.e. type = "l" ) of the 5-minute interval (x-axis) and
 act10 <- aggregate(steps~interval,act1,mean)
 plot(steps~interval,data=act10, type="l", xlab="Interval", main="Average number of steps taken by interval (Oct-Nov 2012)")
 ```
-
+patternline-1.png
 
 Which 5-minute interval, on average across all the days in the dataset,    
 contains the maximum number of steps?  
@@ -115,6 +115,7 @@ of the total daily number of steps?
 act31 <- aggregate(steps~date,act30,sum)
 hist(act31$steps,breaks=15, main="Histogram of mean steps/day", xlab="Mean steps/day")
 ```
+histogram2-1.png
 
 create a file for mean and one for median and combine them
 ```{r, echo=TRUE}
@@ -185,6 +186,8 @@ plot(steps~interval,data=act51, type="l", xlab="Interval", main="Average number 
 act55 <- filter(act42,code=="weekend")
 act56 <- aggregate(steps~interval,act55,mean)
 plot(steps~interval,data=act56, type="l", xlab="Interval", main="Average number of steps (weekend)")
+
+weekinfo-1.png
 
 ###dev.off()
 
